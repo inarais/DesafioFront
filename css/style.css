@@ -1,0 +1,328 @@
+/*********** Estilos aplicados diretamente nas tags ***********/
+html,
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    background-color: white;
+    overflow-x: hidden;
+    color: #888888;
+}
+img {
+    max-width: 100%;
+}
+label {
+    display: block;
+    font-size: .9rem;
+    margin: 15px 0 3px;
+}
+section {
+    margin: 60px 0;
+    position: relative;
+    z-index: 2;
+}
+/* Estilização dos inputs */
+input[type=email],
+input[type=text],
+input[type=number],
+input[type=password] {
+    outline: none;
+    width: 100%;
+    min-height: 30px;
+    border: 1px solid #707070;
+    border-radius: 0;
+    padding: 5px 7px;
+    font-size: 0.8rem;
+    color: #707070;
+}
+input[type=email]:focus,
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=password]:focus {
+    background-color: #f3f3f3;
+    border: 1px solid #000;
+}
+
+
+/*********** Outros Estilos ***********/
+.btn {
+    color: #888888;
+    background-color: #FFF;
+    text-decoration: none;
+    display: block;
+    padding: 9px 12px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    text-align: center;
+    font-size: .9rem;
+    width: 100%;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    outline: none;
+}
+.btn:hover {
+    color: #FFF;
+    background-color: #cccccc;
+    border-color: #cccccc;
+}
+.btn:focus {
+    border-color: #000;
+}
+.btn-block {
+    width: 15rem;
+    margin: 30px auto;
+}
+.radio-label {
+    display: inline-block;
+    margin: 15px 0;
+}
+.titulo-section h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    position: relative;
+    background-color: #ffffff;
+    padding: 0 10px;
+    z-index: 1;
+    display: inline-block;
+    margin: 0;
+}
+.titulo-section {
+    position: relative;
+    text-align: center;
+}
+.titulo-section:after {
+    content: ' ';
+    width: 100%;
+    height: 0.1px;
+    background-color: #707070;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*********** Header ***********/
+header {
+    height: auto;
+    position: relative;
+    z-index: 1;
+    padding: 16rem 10px 30px;
+    color: white;
+    background: linear-gradient(14deg, transparent calc(50% - 1px), #707070 50%);
+    margin-bottom: -13rem;
+}
+header>.container {
+    position: relative;
+    top: -13rem;
+}
+header h1 {
+    text-transform: lowercase;
+    font-size: 1.9rem;
+    margin-bottom: 0;
+}
+header h1 span {
+    display: block;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+header h5 {
+    font-weight: normal;
+    margin-top: .4rem;
+    line-height: 1.2rem;
+}
+header ul {
+    display: flex;
+}
+header .menu ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+header .menu ul li {
+    flex-grow: 1;
+    width: calc(100% * (1/2) - 20px - 1px);
+    margin: 5px 10px;
+}
+header .menu ul li a {
+    box-shadow: 0 0 8px 0px #00000042;
+}
+
+
+/*********** Sessão "Ajude o algoritimo a ser certeiro" ***********/
+#algoritimo h2 {
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+#algoritimo p {
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+
+
+/*********** Sessão de produtos ***********/
+#produtos .produto {
+    margin: 15px 0;
+}
+#produtos .produto-titulo {
+    font-size: .9rem;
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+#produtos .produto-descricao {
+    display: none;
+}
+#produtos .produto-de,
+#produtos .produto-parcelas {
+    font-size: .8rem;
+    font-weight: normal;
+    margin: 0 0 5px;
+}
+#produtos .produto-por {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+#produtos .col-esquerda {
+    padding-right: 0;
+}
+#produtos .btn {
+    padding: 6px 12px;
+}
+#produtos .produto .row {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*********** Footer ***********/
+footer {
+    margin-top: -110px;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(175deg, transparent calc(50% - 1px), #707070 50%);
+    position: relative;
+    text-align: center;
+    height: 150px;
+    padding: 140px;
+}
+footer .texto {
+    z-index: 2;
+    position: absolute;
+    color: #FFF;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    font-size: .9rem;
+}
+footer .texto p {
+    margin: 0;
+}
+
+
+/*********** Media queries ***********/
+@media(max-width: 375px) {
+    header .menu ul li a {
+        box-shadow: 0 0 8px 0px #00000042;
+        font-size: 0.7rem;
+        padding: 9px 0px;
+    }
+}
+
+@media(min-width: 768px) {
+    :root {
+        font-size: 110%;
+    }
+    header {
+        background: linear-gradient(6deg, transparent calc(50% - 1px), #707070 50%);
+    }
+    .btn {
+        padding: 12px !important;
+    }
+
+    /*********** Sessão de produtos ***********/
+    #produtos .produtos-container {
+        justify-content: center;
+    }
+    #produtos .produto-descricao {
+        display: block;
+    }
+    #produtos .produto-descricao {
+        display: block;
+        margin: 15px 0;
+        font-weight: normal;
+        font-size: 0.8rem;
+    }
+    #produtos .col-esquerda {
+        padding-right: 15px;
+    }
+    #produtos .produto {
+        padding: 10px;
+    }
+
+    /*********** Sessão "Compartilhe a novidade!" ***********/
+    #compartilhe-form .form-container {
+        width: 700px;
+        margin: auto;
+    }
+    #compartilhe-form .form-container p {
+        text-align: center;
+    }
+
+}
+
+@media(min-width: 992px) {
+    :root {
+        font-size: 125%;
+    }
+
+    /*********** Header ***********/
+    header {
+        text-align: center;
+        padding: 25rem 10px 30px;
+    }
+    header>.container {
+        position: relative;
+        top: -22rem;
+    }
+    header .menu ul li {
+        flex-grow: 1;
+        width: 160px;
+        margin: 5px 10px;
+    }
+    header .btn {
+        width: 180px;
+    }
+    header .menu ul {
+        width: 750px;
+        margin: auto;
+    }
+    header h1 {
+        margin-bottom: 30px;
+        font-size: 2.2rem
+    }
+    header h1 span {
+        margin-bottom: 5px;
+        font-size: 1.2rem
+    }
+    header h5 {
+        font-size: 0.7rem;
+    }
+
+    /*********** Sessão "Compartilhe a novidade!" ***********/
+    #compartilhe-form .form-container {
+        width: 800px;
+        margin: auto;
+    }
+
+    /*********** Sessão "Ajude o algoritimo a ser certeiro" ***********/
+    #algoritimo h2 {
+        margin-top: 0;
+    }
+    #algoritimo .container>.row {
+        align-items: center;
+    }
+}
