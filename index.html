@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Frontend</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <h1><span>Uma seleção de produtos</span> especial para você</h1>
+                <h5>Todos os produtos desta lista foram selecionados a partir da sua navegação! Aproveite.</h5>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a class="btn" href="#">Conheça a Linx</a>
+                        </li>
+
+                        <li>
+                            <a class="btn" href="#">Ajude o algoritimo</a>
+                        </li>
+
+                        <li>
+                            <a class="btn" href="#">Seus produtos</a>
+                        </li>
+
+                        <li>
+                            <a class="btn" href="#">Compartilhe</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="algoritimo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7 col-lg-8">
+                        <h2>Ajude o algoritimo a ser certeiro</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel urna tortor. Vivamus et arcu non felis tristique eleifend. </p>
+                        <p>Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.</p>
+                    </div>
+
+
+                    <div class="col-12 col-md-5 col-lg-4">
+                        <div class="form">
+                            <form id="contato" autocomplete="off">
+                                <label for="nome">Seu nome:</label>
+                                <input type="text" id="nome" name="nome" required>
+
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+
+                                <label for="cpf">CPF:</label>
+                                <input type="text" id="cpf" name="cpf" oninput="formatarCPF(this)" maxlength="14" required>
+
+                                <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                                <label class="radio-label" for="masculino">Masculino</label>
+                                <input type="radio" id="feminino" name="sexo" value="feminino">
+                                <label class="radio-label" for="feminino">Feminino</label>
+
+                                <button class="btn" type="submit" value="Enviar">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="produtos">
+            <div class="container">
+                <div class="titulo-section">
+                    <h3>Sua seleção especial</h3>
+                </div>
+                <div class="produtos-container row">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="produto">
+                            <div class="row">
+                                <div class="col-6 col-md-12 col-esquerda">
+                                    <img class="produto-imagem" src="https://via.placeholder.com/400x300.png?text=imagem+do+produto">
+                                </div>
+                                <div class="col-6 col-md-12 col-direita">
+                                    <h5 class="produto-titulo">Nome do produto</h5>
+                                    <h6 class="produto-descricao">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h6>
+                                    <p class="produto-de">De: R$23,99</p>
+                                    <p class="produto-por">Por: R$19,99</p>
+                                    <p class="produto-parcelas">ou 2x de R$9,99</p>
+                                    <button class="btn">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="produto">
+                            <div class="row">
+                                <div class="col-6 col-md-12 col-esquerda">
+                                    <img class="produto-imagem" src="https://via.placeholder.com/400x300.png?text=imagem+do+produto">
+                                </div>
+                                <div class="col-6 col-md-12 col-direita">
+                                    <h5 class="produto-titulo">Nome do produto</h5>
+                                    <h6 class="produto-descricao">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h6>
+                                    <p class="produto-de">De: R$23,99</p>
+                                    <p class="produto-por">Por: R$19,99</p>
+                                    <p class="produto-parcelas">ou 2x de R$9,99</p>
+                                    <button class="btn">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="produto">
+                            <div class="row">
+                                <div class="col-6 col-md-12 col-esquerda">
+                                    <img class="produto-imagem" src="https://via.placeholder.com/400x300.png?text=imagem+do+produto">
+                                </div>
+                                <div class="col-6 col-md-12 col-direita">
+                                    <h5 class="produto-titulo">Nome do produto</h5>
+                                    <h6 class="produto-descricao">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h6>
+                                    <p class="produto-de">De: R$23,99</p>
+                                    <p class="produto-por">Por: R$19,99</p>
+                                    <p class="produto-parcelas">ou 2x de R$9,99</p>
+                                    <button class="btn">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="produto">
+                            <div class="row">
+                                <div class="col-6 col-md-12 col-esquerda">
+                                    <img class="produto-imagem" src="https://via.placeholder.com/400x300.png?text=imagem+do+produto">
+                                </div>
+                                <div class="col-6 col-md-12 col-direita">
+                                    <h5 class="produto-titulo">Nome do produto</h5>
+                                    <h6 class="produto-descricao">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h6>
+                                    <p class="produto-de">De: R$23,99</p>
+                                    <p class="produto-por">Por: R$19,99</p>
+                                    <p class="produto-parcelas">ou 2x de R$9,99</p>
+                                    <button class="btn">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="produto">
+                            <div class="row">
+                                <div class="col-6 col-md-12 col-esquerda">
+                                    <img class="produto-imagem" src="https://via.placeholder.com/400x300.png?text=imagem+do+produto">
+                                </div>
+                                <div class="col-6 col-md-12 col-direita">
+                                    <h5 class="produto-titulo">Nome do produto</h5>
+                                    <h6 class="produto-descricao">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h6>
+                                    <p class="produto-de">De: R$23,99</p>
+                                    <p class="produto-por">Por: R$19,99</p>
+                                    <p class="produto-parcelas">ou 2x de R$9,99</p>
+                                    <button class="btn">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="produto">
+                            <div class="row">
+                                <div class="col-6 col-md-12 col-esquerda">
+                                    <img class="produto-imagem" src="https://via.placeholder.com/400x300.png?text=imagem+do+produto">
+                                </div>
+                                <div class="col-6 col-md-12 col-direita">
+                                    <h5 class="produto-titulo">Nome do produto</h5>
+                                    <h6 class="produto-descricao">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h6>
+                                    <p class="produto-de">De: R$23,99</p>
+                                    <p class="produto-por">Por: R$19,99</p>
+                                    <p class="produto-parcelas">ou 2x de R$9,99</p>
+                                    <button class="btn">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="produto">
+                            <div class="row">
+                                <div class="col-6 col-md-12 col-esquerda">
+                                    <img class="produto-imagem" src="https://via.placeholder.com/400x300.png?text=imagem+do+produto">
+                                </div>
+                                <div class="col-6 col-md-12 col-direita">
+                                    <h5 class="produto-titulo">Nome do produto</h5>
+                                    <h6 class="produto-descricao">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h6>
+                                    <p class="produto-de">De: R$23,99</p>
+                                    <p class="produto-por">Por: R$19,99</p>
+                                    <p class="produto-parcelas">ou 2x de R$9,99</p>
+                                    <button class="btn">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="produto">
+                            <div class="row">
+                                <div class="col-6 col-md-12 col-esquerda">
+                                    <img class="produto-imagem" src="https://via.placeholder.com/400x300.png?text=imagem+do+produto">
+                                </div>
+                                <div class="col-6 col-md-12 col-direita">
+                                    <h5 class="produto-titulo">Nome do produto</h5>
+                                    <h6 class="produto-descricao">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h6>
+                                    <p class="produto-de">De: R$23,99</p>
+                                    <p class="produto-por">Por: R$19,99</p>
+                                    <p class="produto-parcelas">ou 2x de R$9,99</p>
+                                    <button class="btn">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-block" href="#">Ainda mais produtos aqui!</a>
+            </div>
+        </section>
+
+        <section id="compartilhe-form">
+            <div class="container">
+                <div class="titulo-section">
+                    <h3>Compartilhe a novidade!</h3>
+                </div>
+
+                <div class="form-container">
+                    <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <label for="nome-amigo">Nome do seu amigo</label>
+                                <input type="text" id="nome-amigo" required>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="email-amigo">E-mail dele</label>
+                                <input type="email" id="email-amigo" required>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-block" type="submit">Enviar agora</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="texto">
+                <p>Testando suas habilidades em HTML, CSS e JS.</p>
+                <p>Linx Impulse</p>
+                <p>2019</p>
+            </div>
+        </footer>
+
+
+       
+    </body>
+
+</html>
