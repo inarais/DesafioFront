@@ -15,8 +15,7 @@ Seu principal objetivo é transformar este layout em uma página funcional.
 - [x] Cadastro de amigos
 - [x] Cadastro de produtos
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c774b611-01f3-44a1-a366-c7181ef6754f/deploy-status)](https://app.netlify.com/sites/desafiofrontenddenveloper/deploys)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bde19272-e9be-48a0-a6fc-ebbf8a6c14e2/deploy-status)](https://app.netlify.com/sites/desafiofrontenddenveloper/deploys)
 🛠 Tecnologias
 HTML
 CSS/Grid 
